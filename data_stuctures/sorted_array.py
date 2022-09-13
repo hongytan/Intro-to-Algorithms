@@ -120,11 +120,11 @@ class Sorted_Array:
         return None
 
 
-# A = Sorted_Array()
-# A.build([123,4,43,43643,12321,665,223,456,1,3589,126,82])
-# for x in A:
-#     print(x, end=" | ")
-# print()
+A = Sorted_Array()
+A.build([123,4,43,43643,12321,665,223,456,1,3589,126,82])
+for x in A:
+    print(x, end=" | ")
+print()
 # print(len(A))
 # print(A.find(53))
 # A.insert(53)
