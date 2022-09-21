@@ -45,20 +45,9 @@ class Direct_Access_Array:
         return max_val
 
     def find_next(self, k): # O(u)
-        first = False
-        candidate = -1
-        for x in self.A:
-            if not first:
-                if x:
-                    if x > k:
-                        first = True
-                        candidate = x
-            else:
-                if x:
-                    if k < x < candidate:
-                        candidate = x
-        if candidate == -1: return None
-        else: return candidate
+        for i in (k, self.size):
+            if self.A[i] is not None:
+                return i
 
     def find_prev(self, k): # O(u)
         first = False
